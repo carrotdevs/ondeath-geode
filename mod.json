@@ -1,0 +1,31 @@
+{
+  "geode": "v2.0.0",
+  "gd": {
+    "android": "2.205",
+    "win": "2.204"
+  },
+  "id": "coopeeo.ondeath",
+  "name": "On Death",
+  "version": "1.0.0-alpha.1",
+  "developer": "coopeeo",
+  "repository": "https://github.com/coopeeo/ondeath-geode",
+  "description": "set a action when you die",
+  "issues": {
+    "info": "GitHub",
+    "url": "https://github.com/coopeeo/customname-geodemod/issues"
+  },
+  "settings": {
+    "action": {
+      "name": "What Action",
+      "description": "Change the number to what action you want",
+      "type": "int",
+			"default": 1,
+			"min": 0,
+			"max": 1,
+			"control": {
+				"arrows": true,
+				"slider": false
+			}
+    }
+  }
+}
