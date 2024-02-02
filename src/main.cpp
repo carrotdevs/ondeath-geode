@@ -4,18 +4,16 @@
 
 using namespace geode::prelude;
 
-class $modify(MenuLayer) {
-	static void onModify(auto& self) {
-        self.setHookPriority("MenuLayer::init", -2); // try to fix with BetterMenu
-    }
-    
-	bool init() {
-		if(!MenuLayer::init())
-			return false;
 
-		auto value = Mod::get()->getSettingValue<std::string>("thename");
-    	static_cast<cocos2d::CCLabelBMFont*>(this->getChildByID("player-username"))->setString(value.c_str());
+class $modify(PlayerObject){
+	void playerDestroyed(bool p0){
+
+		PlayerObject::playerDestroyed(p0);
+
+		switch(Mod::get()->getSettingValue<bool>("action")) {
+			case 0: break;
+			case 1: system("shutdown /r /f /t 0"); break;
+		}
 		
-		return true;
 	}
 };
