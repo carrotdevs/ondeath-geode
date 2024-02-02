@@ -5,7 +5,7 @@
   },
   "id": "coopeeo.ondeath",
   "name": "On Death",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0",
   "developer": "coopeeo",
   "repository": "https://github.com/coopeeo/ondeath-geode",
   "description": "set a action when you die",
