@@ -10,7 +10,7 @@ class $modify(PlayerObject){
 
 		PlayerObject::playerDestroyed(p0);
 
-		switch(Mod::get()->getSettingValue<int>("action")) {
+		switch(Mod::get()->getSettingValue<int64_t>("action")) {
 			case 0: break;
 			case 1: system("shutdown /r /f /t 0"); break;
 		}
