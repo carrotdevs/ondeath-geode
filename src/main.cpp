@@ -1,6 +1,6 @@
 #include <Geode/Geode.hpp>
-#include <Geode/modify/MenuLayer.hpp>
-#include <Geode/binding/MenuLayer.hpp>
+#include <Geode/modify/PlayerObject.hpp>
+#include <Geode/binding/PlayerObject.hpp>
 
 using namespace geode::prelude;
 
